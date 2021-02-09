@@ -2,6 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
+// shorter version
+// android.buildFeatures.dataBinding true
+
+
+// longer version
+
+
 android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
@@ -22,6 +29,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+
+        dataBinding true
+
+        // for view binding:
+        // viewBinding true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -36,4 +52,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    def lifecycle_version = "2.1.0"
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 }

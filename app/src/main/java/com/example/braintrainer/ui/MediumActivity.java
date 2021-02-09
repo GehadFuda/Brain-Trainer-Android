@@ -1,4 +1,4 @@
-package com.example.braintrainer;
+package com.example.braintrainer.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -10,6 +10,9 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.braintrainer.R;
+import com.example.braintrainer.ui.mainactivity.MainActivity;
 
 import java.util.ArrayList;
 import java.util.Random;

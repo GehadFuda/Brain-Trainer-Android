@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainer">
-        <activity android:name=".QuestionsActivity"></activity>
-        <activity android:name=".MediumActivity" />
-        <activity android:name=".HardActivity" />
-        <activity android:name=".EasyActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.QuestionsActivity"></activity>
+        <activity android:name=".ui.MediumActivity" />
+        <activity android:name=".ui.HardActivity" />
+        <activity android:name=".ui.EasyActivity" />
+        <activity android:name=".ui.mainactivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
